@@ -2,10 +2,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
-    
-    
-}
+
 
 section {
     margin-bottom: 30px;
@@ -51,43 +48,4 @@ section {
     position: absolute;
     bottom: 0;
     right: 0;
-}
-
-.hero1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    position: relative;
-}
-
-.hero1 h1 {
-    font-size: 3rem;
-    margin: 0;
-    animation: fadeInDown 1.2s ease;
-}
-
-.hero1 p {
-    font-size: 1.2rem;
-    margin: 10px 0 30px;
-    animation: fadeInUp 1.2s ease;
-}
-
-.hero1 .cta {
-    background: #0077b6;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.hero1 .cta:hover {
-    background: #023e8a;
-    transform: scale(1.1);
 }
