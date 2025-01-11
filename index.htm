@@ -7,6 +7,170 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #00b4d8, #90e0ef);
+            color: #0a0101;
+            overflow-x: hidden;
+        }
+        .hero1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    position: relative;
+    
+}
+
+.hero1 h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: fadeInDown 1.2s ease;
+}
+
+.hero1 p {
+    font-size: 1.2rem;
+    margin: 10px 0 30px;
+    animation: fadeInUp 1.2s ease;
+}
+
+.hero1 .cta {
+    background: #0077b6;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero1 .cta:hover {
+    background: #023e8a;
+    transform: scale(1.1);
+}
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            position: relative;
+            background: url('img/Photo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+    
+           
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeInDown 1.2s ease;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0 30px;
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .hero .cta {
+            background: #0077b6;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .hero .cta:hover {
+            background: #023e8a;
+            transform: scale(1.1);
+        }
+
+        .floating-element {
+            position: absolute;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            opacity: 0.6;
+            border-radius: 50%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            bottom: 15%;
+            right: 20%;
+            width: 70px;
+            height: 70px;
+            background: #fff;
+            opacity: 0.4;
+            border-radius: 50%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            top: 50%;
+            left: 70%;
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            opacity: 0.5;
+            border-radius: 50%;
+            animation-delay: 4s;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
 
 </head>
 <body>
@@ -30,26 +194,34 @@
     <!-- Hero Section -->
     <header class="bg-info text-white text-center py-5">
         <div class="container">
-            
-            <h1>Welcome to My Portfolio</h1>
-            <p class="lead">A showcase of my projects and skills</p>
-            <a href="#projects" class="btn btn-light btn-lg mt-3">Explore Projects</a>
-            
-           
+            <div class="hero">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <h1>Welcome to My Portfolio</h1>
+                <p>Discover my work, my journey, and my passion for creativity and technology.</p>
+                <button class="cta" onclick="scrollToProjects()">View My Projects</button>
+            </div>
         </div>
     </header>
+   
 
     <!-- About Section -->
     <section id="about" class="py-5">
-        <div class="container">
+        <div class="hero1 container h-5">
+        
             <div class="text-center" >
 
                 <img src="img/profil.png"class="profil">
             </div>
-            <h2 class="text-center">About Me</h2>
+            <h1 class="text-center text-white">About Me</h1>
             
-            <p class="text-center">Hello! My name Khoirul Arbi I'm a passionate developer specializing in web and IoT projects with experience in creating innovative projects. Let's create something amazing together!</p>
+            <p class="text-center text-white">Hello! My name Khoirul Arbi I'm a passionate developer specializing in web and IoT projects with experience in creating innovative projects. Let's create something amazing together!</p>
+            <button class="cta" onclick="scrollToExperience()">More</button>
         </div>
+       
     </section>
         <section id="experience" class="py-5 bg-light">
             <div class="container">
@@ -124,7 +296,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="bg-light py-5">
+    <section id="projects" class="projects bg-light py-5" aria-placeholder="projects">
         <div class="container">
             <h2 class="text-center">My Projects</h2>
             <div class="row">
@@ -221,7 +393,18 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Khoirul Arbi. All rights reserved.</p>
     </footer>
-
+    <script>
+         function scrollToProjects() {
+            const projectsSection = document.getElementById('projects');
+            
+            projectsSection.scrollIntoView({ behavior: 'smooth' });
+            
+        }
+        function scrollToExperience(){
+            const experienceSection = document.getElementById('experience');
+            experienceSection.scrollIntoView({behavior:'smooth'});
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
