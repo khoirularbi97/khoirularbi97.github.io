@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: url('/img/profil.png') no-repeat center center/cover;
+    
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.list-group-item {
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+.list-group-item h5 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.list-group-item p {
+    margin: 0;
+    color: #555;
+}
+.profil{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 9px black;
+    border: solid 5px white;
+    transition: 0.2s;
+    cursor: pointer;
+}
