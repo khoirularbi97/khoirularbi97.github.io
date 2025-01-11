@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background: url('/img/profil.png') no-repeat center center/cover;
+    
     
 }
 
@@ -41,3 +41,10 @@ section {
     transition: 0.2s;
     cursor: pointer;
 }
+.blok-img-hero{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+
