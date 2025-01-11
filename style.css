@@ -41,10 +41,15 @@ section {
     transition: 0.2s;
     cursor: pointer;
 }
-.blok-img-hero{
+.img-hero{
     width: 100px;
     height: 100px;
     object-fit: cover;
     
+}
+.blok-img-hero{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 

@@ -11,3 +11,5 @@ document.getElementById('form').addEventListener('submit', function(e) {
     alert(`Thank you for reaching out, ${name}! I'll respond to ${email} soon.`);
     this.reset(); // Reset form fields
 });
+
+
